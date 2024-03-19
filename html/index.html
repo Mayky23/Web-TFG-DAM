@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Game Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+    <title>Glory Star Company</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../img/default.png" alt="Game Logo">
+            <img src="../img/logo.png" alt="Game Logo">
         </div>
         <nav>
             <ul>
@@ -19,16 +24,40 @@
             </ul>
         </nav>
         <div class="user-actions">
-            <img src="../img/logIn.png" alt="Login">
-            <img src="../img/store.png" alt="Store">
+
+            <img id="botonImagen" src="../img/logIn.png" alt="Botón" onclick="irAPaginaLogIn()">
+
+            <img id="botonImagen" src="../img/store.png" alt="Botón" onclick="irAPaginaStore()">
         </div>
     </header>
-    <section class="main-content">
-        <!-- Contenido principal aquí -->
-    </section>
+
+    <div class="container">
+        <section class="columna">
+            <img src="../img/movil.png" alt="Game Logo">
+        </section>
+        <section class="columna">
+            <h2>Emocionantes juegos de mesa en la palma de tu mano</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <div class="iconoDownload">
+                <img src="../img//IconosDownload.png" alt="Download">
+            </div>
+        </section>
+    </div>
+
     <footer>
-        <!-- Pie de página aquí -->
+        <div class="textoBotonContainer">
+            <p><b>¿Quieres trabajar con nosotros?</b></p>
+            <button>Enviar CV</button>
+        </div>
+        <div class="workersImg">
+            <img src="../img/workers.png" alt="Game Logo">
+        </div>
     </footer>
+    
     <script src="../js/script.js"></script>
 </body>
 </html>
