@@ -3,7 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #6ac4ff ;
+    background-image:url(../img/wallpaperStore.jpg);
+    background-repeat: none;
+    background-size: cover;
 }
 
 header {
@@ -56,84 +58,28 @@ nav ul li a {
     margin: 20px;
 }
 
-.columna {
-    padding: 20px;
+.columnaImg {
+    margin: 10px;
     width: auto;
     height: auto;
+    border: 1px solid red;
 }
 
-
-.columna h2{
-    font-family: "Madimi One", sans-serif;
-    letter-spacing: 1px;
-}
-
-.iconoDownload img {
-    height: 80px;
+.columnaText{
+    background-color: yellow;
+    margin: 10px;
     border-radius: 20px;
 }
-
-.splide__pagination {
-    counter-reset: pagination-num;
-    text-align: center;
-}
-
-.splide__pagination button{
-    border: 2px solid yellow;
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-    font-family: "Madimi One", sans-serif;
-    font-size: large;
-    background-color: yellow;
-    margin-bottom: 10px;
-}
-
-.splide__pagination__page:before {
-    counter-increment: pagination-num;
-    content: counter(pagination-num);
-}
-
-/* Estilos para el contenedor de la imagen */
-.imagen-container {
-    text-align: center; /* Alinea el contenido al centro */
-    margin:auto; /* Centra el contenedor horizontalmente */
-    font-family: "Madimi One", sans-serif;
-}
-
-
-.imagen-container img {
-    max-width: 100%;
-    height: auto;
-    width: 400px;
-    height: 200px;
-    margin: 10px;
-}
-
-.containerBestplayer {
-    display: flex;
-    text-align: left;
-    align-items: center; /* Centra los elementos verticalmente */
-    margin: 35px;
-}
-
-.columnaimg {
-    border: 10px solid gold;
-    border-radius: 1000px;
-}
-.columnaimg img {
-    border: 5px solid #0000FF;
-    border-radius: 60px;
-}
-
-.columnaTexto h2{
+.columnaText h2{
     font-family: "Madimi One", sans-serif;
     letter-spacing: 1px;
-    margin: 7px;
-}
-.columnaTexto p{
     margin: 10px;
 }
+
+.columnaText p{
+    margin: 10px;
+}
+
 
 /* Estilos para el footer */
 footer {
