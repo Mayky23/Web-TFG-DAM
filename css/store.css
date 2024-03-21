@@ -3,9 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image:url(../img/wallpaperStore.jpg);
-    background-repeat: none;
-    background-size: cover;
+    background-color: #6ac4ff;
 }
 
 header {
@@ -62,7 +60,6 @@ nav ul li a {
     margin: 10px;
     width: auto;
     height: auto;
-    border: 1px solid red;
 }
 
 .columnaText{
@@ -80,6 +77,74 @@ nav ul li a {
     margin: 10px;
 }
 
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    margin: 0px -10px;
+}
+
+.item {
+    box-sizing: border-box;
+    width: 191px;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    border: 1px solid red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    box-sizing: border-box;
+    width: 191px;
+    margin: 10px;
+    border: 1px solid red;
+}
+
+.contenido {
+    color: #242424;
+    background-color: yellow;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
+
+.contenido img{
+    width: 350px;
+    height: 280px;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid red;
+    padding: 10px;
+}
+
+.contador button.decrement,
+.contador button.increment {
+    padding: 10px 20px;
+    font-size: x-large;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 30px;
+    border: 1px solid #0000FF;
+    background-color: white;
+}
+
+
+.counter {
+    margin: 0 20px;
+    font-size: larger;
+}
 
 /* Estilos para el footer */
 footer {
@@ -87,7 +152,7 @@ footer {
     position: relative;
     bottom: 0;
     left: 0;
-    height: 155px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row; /* Cambia la dirección de flexión a horizontal */
