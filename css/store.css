@@ -1,11 +1,4 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #6ac4ff;
-}
-
+/* -------------------- header ----------------------------------------------------- */
 header {
     display: flex;
     justify-content: space-between;
@@ -56,6 +49,16 @@ nav ul li a {
     margin: 20px;
 }
 
+/* -------------------- body ----------------------------------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6ac4ff;
+}
+
+
 .columnaImg {
     margin: 10px;
     width: auto;
@@ -77,22 +80,11 @@ nav ul li a {
     margin: 10px;
 }
 
-.flexbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    box-sizing: border-box;
-    margin: 0px -10px;
-}
-
 .item {
     box-sizing: border-box;
     width: 191px;
     margin-bottom: 20px;
     padding: 0px 10px;
-    border: 1px solid red;
 }
 
 .container {
@@ -103,30 +95,37 @@ nav ul li a {
 
 .item {
     box-sizing: border-box;
-    width: 191px;
+    width: 350px; /* Ancho del contenedor */
     margin: 10px;
-    border: 1px solid red;
+    text-align: center;
 }
 
 .contenido {
     color: #242424;
-    background-color: yellow;
     font-weight: 600;
     text-align: center;
-    padding: 10px;
 }
 
-.contenido img{
-    width: 350px;
-    height: 280px;
+.contenido img {
+    width: 320px; /* Anchura deseada para la imagen */
+    height: 250px; /* Altura deseada para la imagen */
+    border: 5px solid #0000FF;
+    border-radius: 5px;
 }
 
+/* -------------------- botónes cantidad*/
+
+.precio {
+    font-size: x-large;
+}
+
+
+/* -------------------- botónes cantidad*/
 .contador {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid red;
-    padding: 10px;
+    margin-bottom: 20px ;
 }
 
 .contador button.decrement,
@@ -146,7 +145,57 @@ nav ul li a {
     font-size: larger;
 }
 
-/* Estilos para el footer */
+/* -------------------- botón compra*/
+button {
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+/* -------------------- support / ayuda*/
+.columnaImgSupport img {
+    width: 300px;
+    height: 300px;
+}
+
+.Containerayuda {
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.Containerayuda .ayuda {
+    font-size: x-large;
+    padding: 0.8em 2em;
+    background-color: #000;
+    border: 3px solid yellow;
+    border-radius: 1em;
+    color: #fff;
+    font-weight: bolder;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    box-shadow: -5px 5px 0px 0px yellow;
+    display: inline-block; /* Hace que el botón se comporte como un elemento en línea y se pueda centrar */
+}
+
+
+/* -------------------- footer ----------------------------------------------------- */
+
+
 footer {
     margin-top: 50px;
     position: relative;

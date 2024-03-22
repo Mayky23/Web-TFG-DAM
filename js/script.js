@@ -1,14 +1,13 @@
-  // Función para el primer botón
-  function irAPaginaLogIn() {
-    // Redirige a la página 1
-    window.location.href = "login.html";
-  }
+// Función para redirigir a la página de inicio de sesión abriendo una nueva ventana
+function irAPaginaLogIn() {
+  window.open("login.html", "_blank");
+}
 
-  // Función para el segundo botón
-  function irAPaginaStore() {
-    // Redirige a la página 2
-    window.location.href = "store.html";
-  }
+// Función para redirigir a la página de la tienda abriendo una nueva ventana
+function irAPaginaStore() {
+  window.open("store.html", "_blank");
+}
+
 
 // JavaScript para cambiar la imagen cuando se cambie de página
 const carpetaImagenes = "../img/";
