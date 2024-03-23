@@ -1,11 +1,4 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #6ac4ff ;
-}
-
+/* -------------------- header ----------------------------------------------------- */
 header {
     display: flex;
     justify-content: space-between;
@@ -17,13 +10,6 @@ header {
 
 .logo img {
     height: 150px;
-
-    /*crear difuminado de la imagen*/
-    mask-image: linear-gradient(
-        /* se pinta el 80% de la imagen y luego transparente*/
-        black 80%, 
-        transparent
-    );
 }
 
 nav ul {
@@ -63,92 +49,74 @@ nav ul li a {
     margin: 20px;
 }
 
-.columna {
-    padding: 20px;
-    width: auto;
-    height: auto;
+/* -------------------- body ----------------------------------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6ac4ff;
 }
 
-
-.columna h2{
-    font-family: "Madimi One", sans-serif;
-    letter-spacing: 1px;
-}
-
-.iconoDownload img {
-    height: 80px;
-    border-radius: 20px;
-}
-
-.splide__pagination {
-    counter-reset: pagination-num;
-    text-align: center;
-}
-
-.splide__pagination button{
-    border: 2px solid yellow;
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-    font-family: "Madimi One", sans-serif;
-    font-size: large;
-    background-color: yellow;
-    margin-bottom: 10px;
-}
-
-.splide__pagination__page:before {
-    counter-increment: pagination-num;
-    content: counter(pagination-num);
-}
-
-/* Estilos para el contenedor de la imagen */
-.imagen-container {
-    text-align: center; /* Alinea el contenido al centro */
-    margin:auto; /* Centra el contenedor horizontalmente */
-    font-family: "Madimi One", sans-serif;
-}
-
-
-.imagen-container img {
-    max-width: 100%;
-    height: auto;
-    width: 400px;
-    height: 200px;
-    margin: 10px;
-}
-
-.containerBestplayer {
+.container {
     display: flex;
-    text-align: left;
-    align-items: center; /* Centra los elementos verticalmente */
-    margin: 35px;
+    flex-direction: column; /* Cambia la dirección de flexión a vertical */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
 }
 
-.columnaimg {
-    border: 10px solid gold;
-    border-radius: 1000px;
-}
-.columnaimg img {
-    border: 5px solid #0000FF;
-    border-radius: 60px;
+.columnaImg {
+    width: 300px; /* Ajusta el ancho de la columna de la imagen */
+    height: 300px; /* Ajusta la altura de la columna de la imagen */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    margin-bottom: 10px; /* Añade margen inferior para separar del texto */
 }
 
-.columnaTexto h2{
+.columnaImg img {
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    max-height: 100%; /* Asegura que la imagen se ajuste al contenedor */
+}
+
+.columnaText {
+    background-color: yellow;
+    border-radius: 20px;
+    padding: 10px; /* Añade un espacio interno */
+    margin: 20px;
+}
+
+.columnaText h2 {
     font-family: "Madimi One", sans-serif;
     letter-spacing: 1px;
-    margin: 7px;
-}
-.columnaTexto p{
     margin: 10px;
 }
 
-/* Estilos para el footer */
+/* -------------------- team ----------------------------------------------------- */
+
+.team {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de flexión a vertical */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.team img {
+    width: 350px;
+    height: auto;
+    margin-bottom: 20px; /* Añade un espacio entre cada imagen */
+}
+
+
+/* -------------------- footer ----------------------------------------------------- */
+
+
 footer {
     margin-top: 50px;
     position: relative;
     bottom: 0;
     left: 0;
-    height: 155px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row; /* Cambia la dirección de flexión a horizontal */

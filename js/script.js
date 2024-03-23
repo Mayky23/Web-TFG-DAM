@@ -8,6 +8,10 @@ function irAPaginaStore() {
   window.open("store.html", "_blank");
 }
 
+// Función para redirigir a la página index abriendo una nueva ventana
+function irAPaginaMain() {
+  window.open("index.html", "_blank");
+}
 
 // JavaScript para cambiar la imagen cuando se cambie de página
 const carpetaImagenes = "../img/";

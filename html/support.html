@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+    <title>Glory Star Company</title>
+    <link rel="stylesheet" href="../css/support.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img id="logo" src="../img/logo.png" alt="Game Logo" onclick="irAPaginaMain()">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/support.html">Support</a></li>
+                <li><a href="../html/aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+
+            <img id="botonImagen" src="../img/logIn.png" alt="LOG IN" onclick="irAPaginaLogIn()">
+
+            <img id="botonImagen" src="../img/store.png" alt="STORE" onclick="irAPaginaStore()">
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="columnaImg">
+            <img src="../img/support.png" alt="Support">
+        </section>
+        <section class="columnaText">
+            <h2>¿ Necesitas ayuda ?</h2>
+            <p>
+                Estamos aquí para ayudarte,<br> por ese motivo ponemos a nuestro equipo <br>de atención al cliente a tu completa disposición.
+            </p>
+        </section>
+
+        <hr>
+
+        <section class="formularioSoporte">
+            <h2>Formulario de Soporte Técnico</h2>
+            <form id="formulario" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="button" onclick="enviarFormulario()">Enviar</button>
+            </form>
+        </section>
+        
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="textoBotonContainer">
+            <p><b>¿Quieres trabajar con nosotros?</b></p>
+            <button>Enviar CV</button>
+        </div>
+        <div class="workersImg">
+            <img src="../img/workers.png" alt="Game Logo">
+        </div>
+        <p><b>Esta web está creada como parte del proyecto TFG de DAM en Medac</b></p>
+    </footer>
+
+    <script src="../js/support.js"></script>
+</body>
+</html>
